@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bayo Alabi">
+    <meta name="description" content="This a notes app designed for notes taking with a clean, organized and simple user interface">
+    <title>MiniSoft Pad | Login</title>
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/mobile.css">
+
+</head>
+<body>
+
+  <h1 class="header">MiniSoft Pad</h1>
+
+<main class="main-login">
+  <h2>Login</h2>
+
+  <form id="loginForm">
+    <div class="email">
+      <input
+        type="email"
+        id="email"
+        placeholder="Email"
+        required autocomplete="email"
+        required
+      >
+    </div>
+
+    <div class="password">
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        autocomplete="off"
+        required
+      >
+      </div>
+        <div>
+        <input type="checkbox" id="showPassword">
+        <label for="checkbox">Show password</label>
+      </div>
+
+    <div>
+      <button id="login">Login</button>
+    </div>
+  </form>
+
+  <p class="password-forgot">
+    Don't remember your password?
+    <a href="getpassoword.html">Get password</a>
+  </p>
+
+  <p class="register">
+    Not yet registered?
+    <a href="signup.html">Sign Up</a>
+  </p>
+
+  
+  <script type="module" src="js/auth.js"></script>
+  
+  <script src="js/showpassword.js"></script>
+
+</main>
+
+<footer>
+  &copy; MiniSoft Pad. All rights reserved.
+</footer>
+
+</body>
+</html>

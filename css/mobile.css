@@ -1,0 +1,223 @@
+/* RESPONSIVE: 425px, 375px, 320px */
+
+@media (max-width: 425px) {
+  .dashboard {
+  padding: 1rem;
+  max-width: 400px;
+  }
+
+/* TOP ROW: head + sub-head */
+.head {
+  gap: 1rem; /* space between head and sub-head */
+ 
+}
+
+/* TITLE */
+.title {
+  font-size: 1rem;
+
+}
+
+/* RIGHT SIDE: sub-head (date + delete) */
+.head-right {
+  margin-left: 3.5rem;
+}
+
+/* DATE */
+.time {
+  font-size: 0.6rem;
+}
+
+
+
+/* -------- WRITE NOTES -------*/
+
+#title {
+    width: 12rem;
+    font-size: 12px;
+  
+}
+
+
+
+/* TO-DO CONTAINER */
+
+
+  .task-list li {
+    font-size: 0.9rem;
+  
+  }
+
+  li .date-time {
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+  }
+
+ li .edit {
+  margin-left: 0.5rem;
+  margin-right: 0rem;
+  padding: 2px 5px;
+  
+
+}
+
+
+ li #deleteTask {
+  margin-left: 0rem;
+}
+
+
+li .task-actions {
+    margin-left: 10rem;
+    
+  }
+
+  .todo-rule {
+  width: 345px;
+
+ }
+
+
+ /*-------MAIN FOR LOGIN, SIGN UP, RECOVER PASSWORD----*/
+
+main .main-login, .main-signup, .main-getpassword {
+  width: 20rem;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+/*---LOGIN, SIGNUP HEADER----*/
+.header {
+  font-size: 1.3rem;
+ 
+
+}
+
+/*------SHOW PASSWORD EYE SETTING----*/
+#password, #signupPassword {
+  position: relative;
+ 
+}
+
+
+.login, .password-forgot, .register {
+
+  font-size: 13px;
+}
+
+}
+
+
+
+
+
+@media (max-width: 375px) {
+
+  .dashboard {
+  padding: 0.7rem;
+  max-width: 370px;
+  }
+  .head-right {
+  
+  margin-left: 2.5rem;
+}
+
+li .task-actions {
+    margin-left: 8rem;
+    
+  }
+
+  .todo-rule {
+  width: 315px;
+
+ }
+/* -------- WRITE NOTES -------*/
+
+#title {
+    width: 11rem;
+    height: 1.5rem;
+    font-size: 12px;
+  
+}
+
+
+/*-------MAIN FOR LOGIN, SIGN UP, RECOVER PASSWORD----*/
+
+main .main-login, .main-signup, .main-getpassword {
+  width: 20rem;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+
+/*------SHOW PASSWORD EYE SETTING----*/
+#password, #signupPassword {
+  position: relative;
+ 
+}
+
+}
+
+
+
+
+
+@media (max-width: 320px) {
+
+  .title {
+  font-size: 0.8rem;
+
+}
+
+  .head-right {
+  
+  margin-left: 1.5rem;
+}
+.time {
+  font-size: 0.6rem;
+
+}
+
+li .task-actions {
+    margin-left: 5rem;
+    
+  }
+
+  .todo-rule {
+  width: 270px;
+
+ }
+
+ /* -------- WRITE NOTES -------*/
+
+#title {
+    width: 9rem;
+  
+}
+
+
+
+/*-------MAIN FOR LOGIN, SIGN UP, RECOVER PASSWORD----*/
+
+main .main-login, .main-signup, .main-getpassword {
+  width: 16rem;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+
+
+/*------SHOW PASSWORD EYE SETTING----*/
+#password, #signupPassword {
+  position: relative;
+ 
+}
+
+.login, .password-forgot, .register {
+
+  font-size: 12px;
+  text-align: center;
+  
+}
+
+}

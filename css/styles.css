@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Roboto;
+  background-color: rgb(20, 20, 20);
+  color: #fff;
+}
+
+
+
+/*--------MAIN FOR ALL ----*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 25rem;
+  margin: auto;
+  font-family: Ubuntu;
+  background-color: #202020;
+  border-radius: 10px;
+  margin-top: 5rem;
+}
+
+#loginForm, #signupForm, #forgotPasswordForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#loginForm, #signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 3rem;
+    
+}
+
+
+#email, #signupEmail, #recoverEmail {
+  width: 13rem;
+  height: 2rem;
+  border: none;
+  border-radius: 4px; 
+  margin-top: 2rem;
+  padding-left: 0.5rem;
+}
+
+#userName {
+  width: 13rem;
+  height: 2rem;
+  border: none;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+}
+
+#email::placeholder  {
+  color: black;
+  padding: 0.5rem;
+}
+
+#userName::placeholder {
+  color: black;
+  padding: 0.5rem;
+}
+
+#signupEmail::placeholder {
+  color: black;
+  padding: 0.5rem;
+}
+
+#signupPassword::placeholder {
+  color: black;
+  padding: 0.5rem;
+}
+
+#email:focus {
+  outline: none;
+}
+
+
+#signupEmail:focus {
+  outline: none;
+}
+
+#signupPassword:focus {
+  outline: none;
+}
+
+#userName:focus {
+  outline: none;
+}
+
+#recoverEmail:focus {
+  outline: none;
+
+}
+
+#password, #signupPassword {
+  width: 13rem;
+  height: 2rem;
+  border: none;
+  border-radius: 4px; 
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+
+
+#password::placeholder {
+  color: black;
+  padding: 0.5rem;
+}
+
+#password:focus {
+  outline: none;
+}
+
+#showPassword {
+  margin-top: 1rem;
+  margin-left: -6rem;
+}
+
+label {
+  font-size: 13px;
+}
+
+#recoverEmail::placeholder {
+  padding: 1rem;
+  color: black;
+}
+
+
+#login, #signup, #getPassword {
+    padding: 0.2rem;
+    margin-top: 1rem;
+    width: 13rem;
+    height: 2rem;
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#login:hover {
+  color: white;
+}
+
+.login:hover {
+  color: white;
+}
+
+#signup:hover {
+  color: white;
+}
+
+#getPassword:hover {
+color: white;
+}
+p, .password-forgot, .login  {
+  margin-top: 2rem;
+}
+
+.register  {
+  margin-top: 1rem;
+  
+}
+
+
+
+.header {
+  font-family: Ubuntu;
+  font-size: 2rem;
+  color: orange;
+  margin-top: 2rem;
+  margin-left: 2rem;
+
+}
+
+h2 {
+  font-family: Ubuntu;
+}
+
+.login, .password-forgot, .register {
+
+  font-size: 13px;
+  
+  
+}
+
+/* -------FOR ALL ANCHOR TAGS------*/
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+/*--------FOOTER FOR ALL ------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  font-size: 0.9rem;
+  color: orange;
+}

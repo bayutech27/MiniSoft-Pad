@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Bayo Alabi">
+
+  <title>MiniSoft Pad | Dashboard</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/dashboard.css">
+   <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+  <main class="dashboard">
+
+    <!-- HEADER -->
+    <header class="dashboard-header">
+
+        <h1 class="header-text">MiniSoft Pad</h1>
+
+      <button id="logOutBtn" class="btn btn-outline">Logout</button>
+    </header>
+
+    <section class="welcome-section">
+         <div>
+        <h2 class="welcome-text">Welcome, Bayo!</h2>
+        <p class="subtitle">Manage your notes and to-do list easily.</p>
+      </div>
+    </section>
+
+    <!-- ACTION BUTTONS -->
+    <section class="quick-actions">
+
+      <button id="addNoteBtn" class="btn btn-primary"><a href="writenote.html"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;Write Note</a></button>
+      <button id="addTodoBtn" class="btn btn-secondary"><a href="writetodo.html"><i class="fa-solid fa-clipboard-list"></i>&nbsp;&nbsp;To-Do List</a></button>
+    </section>
+
+    <!-- NOTES SECTION -->
+    <section class="content-section">
+      <div class="add-new">
+        <h2 class="section-title1">My Notes</h2>
+        <a href="writenote.html"><i id="add-icon1"  class="fa-solid fa-plus"></i></a>
+            </div>
+            <hr class="horizontal-rule1">
+
+      <div id="notesContainer" class="note-container">
+        <div class="note-detail">
+        <div class="head">
+          <div class="head-left">
+          <h3 class="title">Body Workout and gym</h3>
+          </div>
+        <div class="head-right">
+          <p class="time" datetime="Dec 25, 2025">Dec 25, 2025.</p>
+          <i id="deleteNote" class="fa-solid fa-trash"></i>
+          </div>
+          </div>
+        <div class="paragraph">
+          <p>Lorem ipsum dolor sit amet consectetur...</p>
+        </div>
+        </div>
+      </div>
+
+
+      <div id="notesContainer" class="note-container">
+        <div class="note-detail">
+        <div class="head">
+          <div class="head-left">
+          <h3 class="title">Body Workout and gym</h3>
+          </div>
+        <div class="head-right">
+          <p class="time" datetime="Dec 25, 2025">Dec 25, 2025.</p>
+          <i id="deleteNote" class="fa-solid fa-trash"></i>
+          </div>
+          </div>
+        <div class="paragraph">
+          <p>Lorem ipsum dolor sit amet consectetur...</p>
+        </div>
+        </div>
+      </div>
+
+      <div id="notesContainer" class="note-container">
+        <div class="note-detail">
+        <div class="head">
+          <div class="head-left">
+          <h3 class="title">Body Workout and gym</h3>
+          </div>
+        <div class="head-right">
+          <p class="time" datetime="Dec 25, 2025">Dec 25, 2025.</p>
+          <i id="deleteNote" class="fa-solid fa-trash"></i>
+          </div>
+          </div>
+        <div class="paragraph">
+          <p>Lorem ipsum dolor sit amet consectetur...</p>
+        </div>
+        </div>
+      </div>
+
+
+
+      <div id="notesContainer" class="note-container">
+        <div class="note-detail">
+        <div class="head">
+          <div class="head-left">
+          <h3 class="title">Body Workout and gym</h3>
+          </div>
+        <div class="head-right">
+          <p class="time" datetime="Dec 25, 2025">Dec 25, 2025.</p>
+          <i id="deleteNote" class="fa-solid fa-trash"></i>
+          </div>
+          </div>
+        <div class="paragraph">
+          <p>Lorem ipsum dolor sit amet consectetur...</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="more-note">
+          <a href="noteslist.html"><button>More Notes</button></a>
+      </div>
+
+    </section>
+
+    <!-- TODO SECTION -->
+    <section class="content-section">
+    <div class="add-new">
+      <h2 class="section-title2">My To-Do List</h2>
+      <a href="writetodo.html"><i id="add-icon2" class="fa-solid fa-plus"></i></a>
+     </div>
+     <hr class="horizontal-rule2">
+
+      <div id="todoContainer" class="todo-container">
+        <ul class="task-list">
+            <li>
+                <p class="task">Body Workout and gym and cook</p>
+                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
+                <button class="edit-task">edit</button>
+                <i id="deleteTask" class="fa-solid fa-trash"></i>
+                </p><hr class="todo-rule">
+            </li>
+
+
+
+            <li>
+                <p class="task">Body Workout and gym and cook</p>
+                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
+                <button class="edit-task">edit</button>
+                <i id="deleteTask" class="fa-solid fa-trash"></i>
+                </p><hr class="todo-rule">
+            </li>
+
+
+
+            <li>
+                <p class="task">Body Workout and gym and cook</p>
+                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
+                <button class="edit-task">edit</button>
+                <i id="deleteTask" class="fa-solid fa-trash"></i>
+                </p><hr class="todo-rule">
+            </li>
+
+
+
+            <li>
+                <p class="task">Body Workout and gym and cook</p>
+                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
+                <button class="edit-task">edit</button>
+                <i id="deleteTask" class="fa-solid fa-trash"></i>
+                </p><hr class="todo-rule">
+            </li>
+
+            
+         
+        </ul>
+      </div>
+
+      <div class="more-list">
+        <a href="writetodo.html"><button>More Lists</button></a>
+    </div>
+    </section>
+
+     <script type="module" src="js/auth.js"></script>
+  </main>
+
+  <footer>
+    &copy; MiniSoft Pad. All rights reserved.
+  </footer>
+</body>
+</html>
