@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Bayo Alabi">
+
+  <title>MiniSoft Pad | Write Note</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+  <main class="dashboard">
+
+    <!-- HEADER -->
+    <header class="dashboard-header">
+
+        <h1 class="header-text">MiniSoft Pad</h1>
+
+        <nav class="back-to-dash"><a href="dashboard.html">Back to Dashboard</a></nav>
+    </header>
+
+    
+
+    <!-- WRITE NOTES-->
+    <section class="write-note">
+     <div class="note-subhead"> 
+
+    <div>
+      <input type="text" id="title" placeholder="Write title" required>
+    </div>
+    
+    <div>
+      <button id="clear">Clear</button>
+  </div>
+    <div>
+        <button id="save">Save</button>
+    </div>
+    </div>
+
+    <div class="colors">
+
+      <label for="color" id="color">Color:</label>
+      <button class="white"></button>
+      <button class="blue"></button>
+      <button class="gold"></button>
+      <button class="green"></button>
+      <button class="teal"></button>
+    </div>
+    
+    <textarea name="noteSpace" id="content" cols="60" rows="40" autocomplete="on" autofocus required></textarea>
+
+   
+    </section>
+
+    
+    
+    
+  <div class="back-to-top">
+    <a href="#"><p>Back to top</p></a>
+   </div>
+
+
+   <script type="module" src="js/writenote.js"></script>
+   <script type="module" src="js/dashboard.js"></script>
+  </main>
+
+  <footer>
+    &copy; MiniSoft Pad. All rights reserved.
+  </footer>
+</body>
+</html>

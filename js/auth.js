@@ -1,4 +1,5 @@
 import { auth } from "./main.js";
+import { updateProfile } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
 
 import {
   createUserWithEmailAndPassword,
@@ -30,21 +31,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ===== SIGN UP =====
   const userSignUp = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const userEmail = signUpEmail.value;
-    const userPassword = signUpPassword.value;
+  const userEmail = signUpEmail.value;
+  const userPassword = signUpPassword.value;
+  const userName = signUpName.value;
 
-    createUserWithEmailAndPassword(auth, userEmail, userPassword)
-      .then((userCredential) => {
-        console.log(userCredential.user);
-        alert("Your account has been successfully created!");
-      })
-      .catch((error) => {
-        console.log(error.code, error.message);
-        alert(error.message);
+  createUserWithEmailAndPassword(auth, userEmail, userPassword)
+    .then(async (userCredential) => {
+
+      // ✅ SAVE THE NAME
+      await updateProfile(userCredential.user, {
+        displayName: userName
       });
-  };
+
+      alert("Your account has been successfully created!");
+      window.location.href = "dashboard.html";
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
+};
+
 
 
   // ===== LOGIN =====

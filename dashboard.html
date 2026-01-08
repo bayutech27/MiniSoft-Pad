@@ -27,7 +27,8 @@
 
     <section class="welcome-section">
          <div>
-        <h2 class="welcome-text">Welcome, Bayo!</h2>
+       <h2 class="welcome-text" id="welcomeUser">Welcome!</h2>
+
         <p class="subtitle">Manage your notes and to-do list easily.</p>
       </div>
     </section>
@@ -47,76 +48,7 @@
             </div>
             <hr class="horizontal-rule1">
 
-      <div id="notesContainer" class="note-container">
-        <div class="note-detail">
-        <div class="head">
-          <div class="head-left">
-          <h3 class="title">Body Workout and gym</h3>
-          </div>
-        <div class="head-right">
-          <p class="time" datetime="Dec 25, 2025">Dec 25, 2025.</p>
-          <i id="deleteNote" class="fa-solid fa-trash"></i>
-          </div>
-          </div>
-        <div class="paragraph">
-          <p>Lorem ipsum dolor sit amet consectetur...</p>
-        </div>
-        </div>
-      </div>
-
-
-      <div id="notesContainer" class="note-container">
-        <div class="note-detail">
-        <div class="head">
-          <div class="head-left">
-          <h3 class="title">Body Workout and gym</h3>
-          </div>
-        <div class="head-right">
-          <p class="time" datetime="Dec 25, 2025">Dec 25, 2025.</p>
-          <i id="deleteNote" class="fa-solid fa-trash"></i>
-          </div>
-          </div>
-        <div class="paragraph">
-          <p>Lorem ipsum dolor sit amet consectetur...</p>
-        </div>
-        </div>
-      </div>
-
-      <div id="notesContainer" class="note-container">
-        <div class="note-detail">
-        <div class="head">
-          <div class="head-left">
-          <h3 class="title">Body Workout and gym</h3>
-          </div>
-        <div class="head-right">
-          <p class="time" datetime="Dec 25, 2025">Dec 25, 2025.</p>
-          <i id="deleteNote" class="fa-solid fa-trash"></i>
-          </div>
-          </div>
-        <div class="paragraph">
-          <p>Lorem ipsum dolor sit amet consectetur...</p>
-        </div>
-        </div>
-      </div>
-
-
-
-      <div id="notesContainer" class="note-container">
-        <div class="note-detail">
-        <div class="head">
-          <div class="head-left">
-          <h3 class="title">Body Workout and gym</h3>
-          </div>
-        <div class="head-right">
-          <p class="time" datetime="Dec 25, 2025">Dec 25, 2025.</p>
-          <i id="deleteNote" class="fa-solid fa-trash"></i>
-          </div>
-          </div>
-        <div class="paragraph">
-          <p>Lorem ipsum dolor sit amet consectetur...</p>
-        </div>
-        </div>
-      </div>
+      <ul id="notesContainer"></ul>
 
       <div class="more-note">
           <a href="noteslist.html"><button>More Notes</button></a>
@@ -132,57 +64,29 @@
      </div>
      <hr class="horizontal-rule2">
 
-      <div id="todoContainer" class="todo-container">
-        <ul class="task-list">
-            <li>
-                <p class="task">Body Workout and gym and cook</p>
-                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
-                <button class="edit-task">edit</button>
-                <i id="deleteTask" class="fa-solid fa-trash"></i>
-                </p><hr class="todo-rule">
-            </li>
 
 
+      <ul id="todoContainer" class="todo-container"></ul>
 
-            <li>
-                <p class="task">Body Workout and gym and cook</p>
-                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
-                <button class="edit-task">edit</button>
-                <i id="deleteTask" class="fa-solid fa-trash"></i>
-                </p><hr class="todo-rule">
-            </li>
-
-
-
-            <li>
-                <p class="task">Body Workout and gym and cook</p>
-                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
-                <button class="edit-task">edit</button>
-                <i id="deleteTask" class="fa-solid fa-trash"></i>
-                </p><hr class="todo-rule">
-            </li>
-
-
-
-            <li>
-                <p class="task">Body Workout and gym and cook</p>
-                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
-                <button class="edit-task">edit</button>
-                <i id="deleteTask" class="fa-solid fa-trash"></i>
-                </p><hr class="todo-rule">
-            </li>
-
-            
-         
-        </ul>
-      </div>
+      
 
       <div class="more-list">
-        <a href="writetodo.html"><button>More Lists</button></a>
+        <a href="writetodo.html"><button>Create More Task</button></a>
     </div>
     </section>
 
-     <script type="module" src="js/auth.js"></script>
+     <div class="back-to-top">
+    <a href="#"><p>Back to top</p></a>
+   </div>
+
+
+
+    <script type="module" src="js/auth.js"></script>
+    
+    <script type="module" src="js/dashboard.js"></script>
+    <script type="module" src="js/writetodo.js"></script>
+
+
   </main>
 
   <footer>

@@ -33,6 +33,21 @@ main {
   margin-top: 5rem;
 }
 
+.login-header {
+
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+
+.signup-header {
+  margin-top: 1rem;
+}
+
+.recover-header {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 #loginForm, #signupForm, #forgotPasswordForm {
   display: flex;
   flex-direction: column;

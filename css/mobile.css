@@ -72,6 +72,12 @@ li .task-actions {
     
   }
 
+
+  .note-rule {
+ width: 125%;
+
+}
+
   .todo-rule {
   width: 345px;
 
@@ -127,8 +133,12 @@ li .task-actions {
     
   }
 
+  .note-rule {
+ width: 118%;
+
+}
   .todo-rule {
-  width: 315px;
+  width: 335px;
 
  }
 /* -------- WRITE NOTES -------*/
@@ -183,8 +193,13 @@ li .task-actions {
     
   }
 
+
+  .note-rule {
+ width: 100%;
+
+}
   .todo-rule {
-  width: 270px;
+  width: 285px;
 
  }
 

@@ -210,30 +210,30 @@ body {
 
 
 /* NOTE CONTAINER */
-.note-container {
-  display: flex;
-  justify-content: left;
-  font-size: 0.85rem;
-  color: whitesmoke;
-  padding: 1rem;
-  margin-top: -1rem;
+
+.note-box {
+  margin-top: 1rem;
+list-style: none;
+
 }
 
 /* NOTE DETAIL WRAPPER */
 .note-detail {
   display: flex;
   flex-direction: column;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid rgb(131, 126, 126);
-  gap: 0.5rem; /* gap between top row and paragraph */
+  padding: 0.5rem 0;
 }
 
 /* TOP ROW: head + sub-head */
-.head {
+.note-head {
   display: flex;
   justify-content: space-between; /* left and right */
   gap: 2rem; /* space between head and sub-head */
   flex: 1;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+  
 }
 
 /* TITLE */
@@ -241,16 +241,29 @@ body {
   font-size: 1rem;
   font-weight: 600;
   white-space: nowrap;
+  color: gray;
+  cursor: pointer;
 }
 
 /* RIGHT SIDE: sub-head (date + delete) */
-.head-right {
+.note-body {
   display: flex;
-  align-items: center;
-  gap: 2rem; /* space between date and trash */
-  white-space: nowrap;
-  margin-left: 7rem;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  cursor: pointer;
+  
 }
+
+.head {
+  color: navy;
+}
+
+.body {
+  color: black;
+  font-weight: 500;
+}
+
 
 /* DATE */
 .time {
@@ -258,10 +271,30 @@ body {
   color: whitesmoke;
 }
 
+
+/* EDIT  */
+
+.edit {
+  padding: 5px 10px;
+  background-color: wheat;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25s
+ }
+
+ .edit:hover {
+     color: gray;
+
+    }
+
+
 /* DELETE ICON */
 #deleteNote {
+  font-size: 1rem;
   cursor: pointer;
-  color: rgb(255, 0, 0);
+  color: orangered;
   transition: 0.25s;
 }
 
@@ -269,20 +302,17 @@ body {
     transform: scale(1.2);
 }
 
-/* PARAGRAPH UNDER TITLE */
-.paragraph {
-  margin-left: 0; /* align with title */
-  max-width: 80%;
+.note-rule {
+ width: 98%;
+ margin-bottom: 1rem;
+
 }
 
-.paragraph p {
-  font-size: 0.85rem;
-  color: whitesmoke;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
+.note-rule {
+  margin-top: -1rem;
+  border: 1px solid gray;
+}
 
 .more-note, .more-list {
   display: flex;
@@ -291,12 +321,16 @@ body {
   margin-right: 1rem;
 }
 
+.more-note {
+  margin-top: 1rem;
+}
+
 .more-note button, .more-list button {
 
   background-color: orange;
   border: none;
   border-radius: 2rem;
-  color: black;
+  color: white;
   padding: 0.4rem;
   cursor: pointer;
   transform: 0.25s;
@@ -304,16 +338,36 @@ body {
 
 .more-list button {
   background-color: steelblue;
-  margin-top: -1rem;
+
 }
 
+.more-list {
+  margin-top: 2rem;
+}
 
 .more-note button:hover {
-  color: white;
+  color: rgb(204, 203, 203);
 }
 
 .more-list button:hover {
-  color: white;
+  color: rgb(182, 180, 180);
+}
+
+
+
+/* HEADING AND PARAGRAPH FOR CHECKNOTE */
+
+.heading {
+    font-family: Ubuntu;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  font-family: Ubuntu;
+  font-size: 0.85rem;
+  text-align: justify;
+  width: 100%;
 }
 
 
@@ -322,68 +376,98 @@ body {
   /* TO-DO CONTAINER */
 
   .todo-container {
-         display: flex;
-         padding: 1rem;
-         margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      background-color: teal;  
+      margin-bottom: 1rem;
   }
 
   .task-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
-  
+    padding: 20px 10px 10px 10px;
   }
 
   .task-list:first-child {
-    margin-top: -1rem;
+    margin-top: -0.5rem;
   }
 
+.task-and-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
 
-  .task-list li {
-    font-size: 0.9rem;
-    padding-bottom: 1rem;
-    
-  }
+#task {
+ padding-left: 0.5rem;
+
+}
 
 
-  li .task-actions {
-    margin-top: 0.9rem;
-    margin-left: 15rem;
-    
-  }
 
-  p .date-time {
-    font-size: 0.7rem;
-    margin-right: 2rem;
-  }
-
-  p .edit-task {
-  margin-right: 2rem;
-  padding: 2px 5px;
-  background-color: steelblue;
+ .task {
+  font-family: Ubuntu;
+  font-size: 1.2rem;
   color: white;
+ }
+
+  .task-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+
+  .toggle-btn {
+
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: wheat;
+    color: black;
+    cursor: pointer;
+
+  }
+ 
+  .toggle-btn:hover {
+       color: gray;
+
+
+  }
+
+
+  .edit-task {
+  padding: 2px 10px;
+  background-color: wheat;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.25s
  }
 
+ .edit-task:hover {
+     color: gray;
+
+    }
+
+
  .todo-rule {
   border: 1px solid gray;
-  width: 420px;
+  width: 455px;
   margin-top: 1rem;
  }
 
- .edit:hover {
-     color: gray;
- }
+ 
 
 
-  li #deleteTask {
+  #deleteTask {
   cursor: pointer;
-  color: red;
+  color: orange;
   transition: 0.25s;
 }
 
@@ -466,7 +550,7 @@ body {
 }
 
 
-.white, .blue, .yellow, .green, .teal {
+.white, .blue, .gold, .green, .teal {
   width: 2.5rem;
   height: 1.2rem;
   border: none;
@@ -481,8 +565,8 @@ body {
   background-color: steelblue;
 }
 
-.yellow {
-  background-color: yellow;
+.gold {
+  background-color: gold;
 }
 
 .green {
@@ -493,7 +577,7 @@ body {
   background-color: teal;
 }
 
-#noteSpace:focus {
+#content:focus {
     outline: none;
 }
 

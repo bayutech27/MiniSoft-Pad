@@ -27,7 +27,7 @@
         <h3>Create Task</h3>
 
     <div class="add-task">
-        <input type="text" id="task" autofocus required placeholder="eg: Meeting with the MD">
+        <input type="text" id="task" autofocus placeholder="eg: Meeting with the MD" required>
         <button class="add-btn">Add</button>
     </div>
     </div>
@@ -35,59 +35,19 @@
 
       <div class="add-new">
       <h2 class="section-title2">To-Do List</h2>
-      <i id="add-icon2" class="fa-solid fa-plus"></i>
      </div>
      <hr class="horizontal-rule2">
 
     
 
 
-    <div id="todoContainer" class="todo-container">
-        <ul class="task-list">
-            <li>
-                <p class="task">Body Workout and gym and cook</p>
-                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
-                <button class="edit-task">edit</button>
-                <i id="deleteTask" class="fa-solid fa-trash"></i>
-                </p><hr class="todo-rule">
-            </li>
-
-
-
-            <li>
-                <p class="task">Body Workout and gym and cook</p>
-                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
-                <button class="edit-task">edit</button>
-                <i id="deleteTask" class="fa-solid fa-trash"></i>
-                </p><hr class="todo-rule">
-            </li>
-
-
-
-            <li>
-                <p class="task">Body Workout and gym and cook</p>
-                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
-                <button class="edit-task">edit</button>
-                <i id="deleteTask" class="fa-solid fa-trash"></i>
-                </p><hr class="todo-rule">
-            </li>
-
-
-
-            <li>
-                <p class="task">Body Workout and gym and cook</p>
-                <p class="task-actions"><span class="date-time" datetime="Dec 25, 2025">Dec 25, 2025</span>
-                <button class="edit-task">edit</button>
-                <i id="deleteTask" class="fa-solid fa-trash"></i>
-                </p><hr class="todo-rule">
-            </li>
-
-        </ul>
-      </div>
+    <ul id="todoContainer" class="todo-container"></ul>
     
   <div class="back-to-top">
     <a href="#"><p>Back to top</p></a>
    </div>
+
+   <script type="module" src="js/writetodo.js"></script>
   </main>
 
 
