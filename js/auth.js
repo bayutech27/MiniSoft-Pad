@@ -69,7 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .catch((error) => {
         console.log(error.code, error.message);
-        alert(error.message);
+        if ( error.message == "Firebase: Error (auth/invalid-credential).") {
+
+          alert('Email or Password is incorrect.');
+        }
+        
       });
   };
 
