@@ -29,6 +29,69 @@ document.addEventListener("DOMContentLoaded", () => {
   const resetPasswordBtn = document.getElementById("getPassword");
 
 
+ // ===== AUTH STATE =====
+  onAuthStateChanged(auth, (user) => {
+  const path = window.location.pathname;
+
+  if (user) {
+    // logged in
+    if (path.includes("index")) {
+      window.location.href = "dashboard.html";
+    }
+  } else {
+    // logged out
+    if (path.includes("dashboard")) {
+      window.location.href = "index.html";
+    }
+  }
+});
+
+
+
+//=====PASSWORD VALIDATION FUNCTION====
+const passwordSymbols = [
+  "!", "@", "#", "$", "%", "^", "&", "*",
+  "(", ")", "_", "+", "-", "=",
+  "?", ".", ",",
+  ":", ";",
+  "~", "`",
+  "|", "\\", "/",
+  "'", "\""
+];
+
+
+function validatePassword(password) {
+
+  // Rule 1: length
+  if (password.length < 8) {
+    return "Password must be at least 8 characters long";
+  }
+
+  // Rule 2: uppercase letter
+  if (!/[A-Z]/.test(password)) {
+    return "Password must contain at least one uppercase letter";
+  }
+
+  // Rule 3: number
+  if (!/[0-9]/.test(password)) {
+    return "Password must contain at least one number";
+  }
+
+  // Rule 4: special character
+  const hasSymbol = passwordSymbols.some(symbol =>
+    password.includes(symbol)
+  );
+
+  if (!hasSymbol) {
+    return "Password must contain at least one special character";
+  }
+
+  // ✅ If all rules pass
+  return "VALID";
+};
+
+
+
   // ===== SIGN UP =====
   const userSignUp = async (e) => {
   e.preventDefault();
@@ -36,6 +99,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const userEmail = signUpEmail.value;
   const userPassword = signUpPassword.value;
   const userName = signUpName.value;
+
+  const result = validatePassword(userPassword);
+
+if (result !== "VALID") {
+  alert(result);
+  return; // ⛔ stop signup
+
+};
 
   createUserWithEmailAndPassword(auth, userEmail, userPassword)
     .then(async (userCredential) => {
@@ -83,24 +154,6 @@ document.addEventListener("DOMContentLoaded", () => {
     await signOut(auth);
     window.location.href = "index.html";
   };
-
-
-  // ===== AUTH STATE =====
-  onAuthStateChanged(auth, (user) => {
-  const path = window.location.pathname;
-
-  if (user) {
-    // logged in
-    if (path.includes("index")) {
-      window.location.href = "dashboard.html";
-    }
-  } else {
-    // logged out
-    if (path.includes("dashboard")) {
-      window.location.href = "index.html";
-    }
-  }
-});
 
 
 //======RESET PASSWORD=======
